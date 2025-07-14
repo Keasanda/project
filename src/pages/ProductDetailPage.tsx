@@ -144,7 +144,7 @@ export default function ProductDetailPage({ productId, onBack, onProductSelect }
                   Email Us
                 </a>
                 <a 
-                  href="https://wa.me/27011234567"
+                  href="https://wa.me/message/L56XUSH7SEVBN1"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center space-x-2 border border-stone-600 text-stone-300 px-6 py-3 rounded-xl hover:border-stone-500 hover:text-stone-200 transition-colors"

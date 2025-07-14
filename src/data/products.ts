@@ -25,8 +25,7 @@ export const products: Product[] = [
     detailedDescription: "Our Cement Planter Series represents the perfect marriage of industrial concrete and warm wood accents. Each planter is meticulously handcrafted by our skilled artisans, ensuring that no two pieces are exactly alike. The concrete is mixed with natural aggregates to create a unique texture that develops character over time, while the wooden accent provides a warm contrast that complements any plant selection.",
     additionalImages: [
       "https://concretegoods.co.uk/cdn/shop/products/Black-Trinket-Tray-Concrete-Round-Minimalist-Entryway-Organiser-Makeup-Jewellery-Ring-Dish-Home-Decoration-Small-Bits-Key-Holder-Decoration.jpg?v=1694558815&width=713",
-      "https://concretegoods.co.uk/cdn/shop/products/Large-Concrete-Tray-Circle-Decorative-Tray-Modern-Round-Display-Tray-Coffee-Table-Decor-3.jpg?v=1694558815&width=713",
-      "https://concretegoods.co.uk/cdn/shop/products/Black-Trinket-Tray-Concrete-Round-Minimalist-Entryway-Organiser-Makeup-Jewellery-Ring-Dish-Home-Decoration-Small-Bits-Key-Holder-Decoration-3.jpg?v=1694558815&width=713"
+
     ],
     specifications: {
       material: "High-grade concrete with natural wood accent",
@@ -51,8 +50,7 @@ export const products: Product[] = [
     detailedDescription: "The Timber Bowl Collection showcases the beauty of natural wood grain enhanced by carefully placed cement inlay details. Each bowl is carved from sustainably sourced hardwood and features unique cement patterns that flow organically through the wood grain. These functional art pieces serve as stunning centerpieces while maintaining their practical utility for serving and display.",
     additionalImages: [
       "https://concretegoods.co.uk/cdn/shop/products/Eld-Long-Matchstick-Holder-Matchstick-Storage-Jar-Minimalist-Toothpick-Holder-Cocktail-Stick-Holder-Home-Garden-Decor-2.jpg?v=1628332355&width=713",
-      "https://concretegoods.co.uk/cdn/shop/products/Eld-Long-Matchstick-Holder-Matchstick-Storage-Jar-Minimalist-Toothpick-Holder-Cocktail-Stick-Holder-Home-Garden-Decor-3.jpg?v=1628332355&width=713",
-      "https://concretegoods.co.uk/cdn/shop/products/Eld-Long-Matchstick-Holder-Matchstick-Storage-Jar-Minimalist-Toothpick-Holder-Cocktail-Stick-Holder-Home-Garden-Decor-3.jpg?v=1628332355&width=713"
+
     ],
     specifications: {
       material: "Solid hardwood with cement inlay",
@@ -77,8 +75,7 @@ export const products: Product[] = [
     detailedDescription: "Our Concrete Candleholders embody minimalist design principles while creating warm, ambient lighting for any space. The smooth concrete cylinder is perfectly balanced on a natural wood base, creating a striking silhouette that complements both modern and traditional interiors. Each piece is hand-finished to ensure the perfect balance between the materials.",
     additionalImages: [
       "https://concretegoods.co.uk/cdn/shop/products/Large-Oval-Black-Concrete-Tray-Trinket-Tray-Minimalist-Modern-Home-Decor-Decorative-Tray-Scandi-Bathroom.jpg?v=1660170101&width=713",
-      "https://concretegoods.co.uk/cdn/shop/products/Large-Oval-Concrete-Terrazzo-Tray-Trinket-Tray-Minimal-Home-Decor-Concrete-Tray-Bathroom-Decor-Decorative-Tray-3.jpg?v=1660170101&width=713",
-      "https://concretegoods.co.uk/cdn/shop/products/Large-Oval-Concrete-Terrazzo-Tray-Trinket-Tray-Minimal-Home-Decor-Concrete-Tray-Bathroom-Decor-Decorative-Tray-8.jpg?v=1628335123&width=713"
+
     ],
     specifications: {
       material: "Smooth concrete with hardwood base",
@@ -103,8 +100,7 @@ export const products: Product[] = [
     detailedDescription: "This elegant serving tray represents the pinnacle of our craftsmanship, combining rich walnut wood with smooth concrete sections. The design creates distinct areas for different serving needs while maintaining visual harmony. The raised edges and comfortable handles make it both beautiful and functional for entertaining guests or everyday use.",
     additionalImages: [
       "https://concretegoods.co.uk/cdn/shop/products/Kopp-Concrete-Coasters-Minimalist-Circle-Drink-Tray-Modern-Round-Key-Tray-Coffee-Table-Decor-2.jpg?v=1628334322&width=713",
-      "https://concretegoods.co.uk/cdn/shop/products/Kopp-Concrete-Coasters-Minimalist-Circle-Drink-Tray-Modern-Round-Key-Tray-Coffee-Table-Decor-8.jpg?v=1628334323&width=713",
-      "https://concretegoods.co.uk/cdn/shop/products/Kopp-Concrete-Coasters-Minimalist-Circle-Drink-Tray-Modern-Round-Key-Tray-Coffee-Table-Decor-5.jpg?v=1628334323&width=713"
+
     ],
     specifications: {
       material: "Premium walnut wood with concrete sections",
@@ -124,13 +120,12 @@ export const products: Product[] = [
     id: 5,
     name: "Cement Vase Collection",
     price: 1400,
-    image: "https://nbelove.co.za/cdn/shop/products/DiceGroove1.jpg?v=1641380708",
+    image: "https://i.postimg.cc/43YwZz9W/part-one.jpg",
     description: "Textured concrete vases with organic wood details",
     detailedDescription: "The Cement Vase Collection features organically shaped concrete vessels enhanced with carefully integrated wood details. Each vase is hand-formed to create unique textures and shapes that celebrate the natural properties of concrete. The wood elements add warmth and create visual interest, making each piece a sculptural statement even when not holding flowers.",
     additionalImages: [
-      "https://nbelove.co.za/cdn/shop/products/DiceGroove2.jpg?v=1641380708",
-      "https://nbelove.co.za/cdn/shop/products/Monocheck1.jpg?v=1640212773",
-      "https://nbelove.co.za/cdn/shop/products/Monocheck1.jpg?v=1640212773"
+      "https://i.postimg.cc/0jRVVbrc/part-2.jpg",
+     
     ],
     specifications: {
       material: "Textured concrete with wood accents",
@@ -150,13 +145,12 @@ export const products: Product[] = [
     id: 6,
     name: "Timber Storage Boxes",
     price: 2750,
-    image: "https://nbelove.co.za/cdn/shop/products/DarkRoast.jpg?v=1640213306",
+    image: "https://i.postimg.cc/yN3h2sM5/Whats-App-Image-2025-07-11-at-10-12-13-314ce0b8.jpg",
     description: "Handcrafted storage boxes with concrete accent panels",
     detailedDescription: "Our Timber Storage Boxes combine functionality with artistic design, featuring solid wood construction enhanced by concrete accent panels. These versatile pieces provide elegant storage solutions while serving as beautiful decorative elements. The contrast between warm wood and cool concrete creates visual interest, while the precision joinery ensures lasting durability.",
     additionalImages: [
-      "https://nbelove.co.za/cdn/shop/products/DarkRoast2.jpg?v=1640213307",
-      "https://nbelove.co.za/cdn/shop/products/DarkRoast3.jpg?v=1640213307",
-      "https://nbelove.co.za/cdn/shop/products/DarkRoast.jpg?v=1640213306"
+      "https://i.postimg.cc/Mpv1jzpT/Whats-App-Image-2025-07-11-at-10-12-15-babc5a30.jpg",
+    
     ],
     specifications: {
       material: "Solid timber with concrete panels",
@@ -176,13 +170,12 @@ export const products: Product[] = [
     id: 7,
     name: "Concrete Coffee Table",
     price: 4500,
-    image: "https://arkworkshop.co.za/cdn/shop/products/Ark_Shot5_0813_590x.jpg?v=1664376929",
+    image: "https://i.pinimg.com/1200x/15/ef/a8/15efa894432fd411f91887a1a371a791.jpg",
     description: "Modern coffee table with cement top and wooden legs",
     detailedDescription: "This striking coffee table represents our commitment to creating furniture that serves as functional art. The smooth concrete top provides a durable surface perfect for daily use, while the carefully crafted wooden legs add warmth and visual lightness. The proportions are carefully calculated to complement modern living spaces while maintaining timeless appeal.",
     additionalImages: [
-      "https://arkworkshop.co.za/cdn/shop/products/Ark_Shot5_0814_720x.jpg?v=1664376929",
-      "https://arkworkshop.co.za/cdn/shop/products/Ark_Shot5_0546_720x.jpg?v=1664376929",
-      "https://arkworkshop.co.za/cdn/shop/products/Ark_Shot4_0542_720x.jpg?v=1664376929"
+      "https://i.pinimg.com/1200x/c7/fe/98/c7fe985f1ecb590866bee73e24d4a31b.jpg",
+      
     ],
     specifications: {
       material: "Reinforced concrete top with hardwood legs",
@@ -202,13 +195,12 @@ export const products: Product[] = [
     id: 8,
     name: "Wood & Cement Bookends",
     price: 850,
-    image: "https://arkworkshop.co.za/cdn/shop/products/Ark_Shot17_0633_30d145f8-1527-433d-83f3-91d5d46e110f_590x.jpg?v=1678968597",
+    image: "https://i.pinimg.com/736x/2b/5d/3d/2b5d3d782e40878415d6448fa04b9dd3.jpg",
     description: "Sculptural bookends combining natural materials",
     detailedDescription: "These sculptural bookends transform a practical necessity into an artistic statement. Each piece combines the weight and stability of concrete with the warmth and grain of natural wood. The geometric forms create visual interest on any shelf while providing reliable support for your book collection. Sold as a matching pair, they bring cohesion to any bookshelf or display.",
     additionalImages: [
-      "https://arkworkshop.co.za/cdn/shop/products/Ark_Shot17_0637_81086d89-a713-4f21-8802-dcf364703157_720x.jpg?v=1678968597",
-      "https://arkworkshop.co.za/cdn/shop/products/Ark_Shot17_0620_af45b160-33b4-4833-b2b3-7e921656076a_720x.jpg?v=1678968597",
-      "https://arkworkshop.co.za/cdn/shop/products/Ark_Shot17_0612_e951ee52-571c-4936-956e-b205155ee165_720x.jpg?v=1678968597"
+      "https://i.pinimg.com/736x/16/43/46/164346b2e0d7f1df169d1669fad65662.jpg",
+     
     ],
     specifications: {
       material: "Concrete base with hardwood accent",
@@ -228,13 +220,12 @@ export const products: Product[] = [
     id: 9,
     name: "Cement Wall Shelves",
     price: 1650,
-    image: "https://arkworkshop.co.za/cdn/shop/products/Ark_Shot21_0658_590x.jpg?v=1679734347",
+    image: "https://i.pinimg.com/1200x/d8/80/15/d88015f9894c33d116f07f321239c168.jpg",
     description: "Floating shelves with wood and concrete design",
     detailedDescription: "Our Cement Wall Shelves create the illusion of floating while providing sturdy support for your treasured items. The concrete shelf appears to emerge from the wooden mounting system, creating a striking visual effect. Each shelf is engineered to support substantial weight while maintaining clean lines that complement contemporary interiors.",
     additionalImages: [
-      "https://arkworkshop.co.za/cdn/shop/products/Ark_Shot21_0860_720x.jpg?v=1679734347",
-      "https://arkworkshop.co.za/cdn/shop/products/Ark_Shot21_0655_720x.jpg?v=1679734347",
-      "https://arkworkshop.co.za/cdn/shop/products/Ark_Shot21_0859_720x.jpg?v=1679734347"
+      "https://i.pinimg.com/736x/fc/31/b7/fc31b764ce08af9c78f10de20fa4cde1.jpg",
+     
     ],
     specifications: {
       material: "Reinforced concrete with hardwood mounting",
