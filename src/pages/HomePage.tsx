@@ -178,7 +178,7 @@ export default function HomePage({ onProductSelect }: HomePageProps) {
             <div className="relative">
               <div className="aspect-square rounded-2xl overflow-hidden">
                 <img
-                  src="https://images.pexels.com/photos/4846106/pexels-photo-4846106.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  src="https://i.postimg.cc/0yw8qJVP/Whats-App-Image-2025-07-11-at-18-44-37-955b65f3.jpg"
                   alt="Artisan crafting"
                   className="w-full h-full object-cover"
                 />
