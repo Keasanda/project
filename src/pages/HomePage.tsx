@@ -87,7 +87,7 @@ export default function HomePage({ onProductSelect }: HomePageProps) {
             </p>
             <div className="bg-amber-50 border border-amber-200 rounded-2xl p-6 max-w-3xl mx-auto">
               <p className="text-lg text-amber-800 font-medium">
-                ✨ We specialize in custom orders - bring your vision to life with our bespoke creations
+                 We specialize in custom orders , bring your vision to life with our bespoke creations
               </p>
             </div>
           </div>
@@ -155,10 +155,20 @@ export default function HomePage({ onProductSelect }: HomePageProps) {
                 <span className="block font-medium text-amber-700">Intention</span>
               </h3>
               <p className="text-lg text-stone-600 leading-relaxed">
-                Every piece in our collection is born from a deep appreciation for natural materials and timeless design. We believe that the imperfect beauty of concrete and the organic warmth of wood create harmony in any space.
+                Ikhanda Emafini Concepts is a Durban, KwaMashu based
+business, we handcraft sustainable homeware, decor and
+furniture using reclaimed wood and concrete.It all started
+towards the end of 2019 right at the beginning of a world
+pandemic. 
               </p>
               <p className="text-lg text-stone-600 leading-relaxed">
-                Our artisans spend hours perfecting each creation, ensuring that every texture, every grain, and every curve tells a story of dedication to the craft. We take pride in creating custom pieces that reflect your personal style and vision.
+Founder Philisiwe Danisa started revisiting her dream
+to create stunning pieces of home decor, homeware and
+furniture.She started with what she had at the time , collecting
+plastic containers for molds and taught herself the art of working
+with concrete.From trail and error to perfection, our concrete
+homeware products are a testament of determination and
+passion for creativity and innovation.
               </p>
               <div className="flex items-center space-x-6 pt-4">
                 <div className="text-center">
@@ -183,13 +193,7 @@ export default function HomePage({ onProductSelect }: HomePageProps) {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="absolute -bottom-6 -right-6 w-32 h-32 rounded-2xl overflow-hidden border-4 border-stone-50 shadow-xl">
-                <img
-                  src="https://images.pexels.com/photos/4917821/pexels-photo-4917821.jpeg?auto=compress&cs=tinysrgb&w=400"
-                  alt="Finished product"
-                  className="w-full h-full object-cover"
-                />
-              </div>
+             
             </div>
           </div>
         </div>

@@ -40,9 +40,9 @@ export default function Header({ currentPage, onNavigate }: HeaderProps) {
         <div className="flex items-center justify-between h-16 sm:h-20">
           <div className="flex items-center cursor-pointer" onClick={() => handleNavClick('home')}>
             <img 
-              src="/Screenshot 2025-07-07 102307 copy.png" 
+              src="https://i.postimg.cc/qq8LB5Kp/DOC-20250627-WA0019-page-0001-prev-ui.png" 
               alt="IKHANDA EMAFINI Logo" 
-              className="h-12 w-20 object-contain"
+              className="h-20 w-30 object-contain"
             />
           </div>
           

@@ -41,7 +41,7 @@ export default function Footer({ onNavigate }: FooterProps) {
               <span className="text-stone-300 text-sm font-medium">Follow us:</span>
               <div className="flex space-x-3">
                 <a 
-                  href="https://facebook.com/ikhandaemafini" 
+                  href="https://www.facebook.com/p/IKhanda-Emafini-100069364414781/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="group"
@@ -52,7 +52,7 @@ export default function Footer({ onNavigate }: FooterProps) {
                 </a>
                 
                 <a 
-                  href="https://instagram.com/ikhandaemafini" 
+                  href="https://www.instagram.com/ikhanda_emafini/?hl=en" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="group"
