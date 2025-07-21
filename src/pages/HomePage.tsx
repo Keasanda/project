@@ -217,9 +217,9 @@ passion for creativity and innovation.
               <div className="text-center lg:text-left">
                 <h4 className="text-2xl font-serif font-medium text-stone-800 mb-4">Get in Touch</h4>
                 <div className="space-y-3 text-stone-600">
-                  <p>hello@ikhandaemafini.co.za</p>
-                  <p>+27 (0)11 123-4567</p>
-                  <p>123 Artisan Lane<br />Johannesburg, South Africa</p>
+                  <p>philidanisa1@gmail.com</p>
+                  <p>076 734 9862</p>
+                  <p>Durban, KwaMashu, South Africa</p>
                 </div>
               </div>
               

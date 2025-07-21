@@ -59,10 +59,7 @@ export default function ReturnPolicyPage() {
                 We accept returns for most items within 30 days of delivery. To be eligible for a return, items must be:
               </p>
               <ul className="list-disc list-inside space-y-2 ml-4">
-                <li>In original, unused condition</li>
-                <li>In original packaging with all accessories</li>
-                <li>Free from damage not caused by manufacturing defects</li>
-                <li>Accompanied by original receipt or order confirmation</li>
+            We want you to absolutely love your handcrafted concrete pieces! Because each item is unique and poured with care, slight variations are part of their charm. It's truly what makes them one-of-a-kind. In the spirit of keeping things easy and fair, we offer exchanges only in specific situations. We stand by the quality of our work, so if your item arrives defective or damaged, we'll happily arrange an exchange for you. How to Exchange a Defective or Damaged Item: If you find your product isn't quite right due to a defect or damage, simply drop us an email. We'll guide you through the process to get a replacement out to you as smoothly as possible. We understand you'll be eager to receive your new item! Just a friendly heads-up that depending on where you're located, it might take a little while for your exchanged piece to make its way back to you. We appreciate your patience as we ensure your new item arrives safely.
               </ul>
             </div>
           </section>
@@ -89,7 +86,7 @@ export default function ReturnPolicyPage() {
             <div className="space-y-4 text-stone-600">
               <p>To initiate a return, please follow these steps:</p>
               <ol className="list-decimal list-inside space-y-2 ml-4">
-                <li>Contact us at hello@ikhandaemafini.co.za or +27 (0)11 123-4567</li>
+                <li>Contact us at philidanisa1@gmail.com or 076 734 9862</li>
                 <li>Provide your order number and reason for return</li>
                 <li>Receive return authorization and prepaid shipping label</li>
                 <li>Package item securely in original packaging</li>
@@ -144,8 +141,8 @@ export default function ReturnPolicyPage() {
                 For any questions about returns or to initiate a return, please contact us:
               </p>
               <div className="space-y-2 text-stone-600">
-                <p><strong>Email:</strong> hello@ikhandaemafini.co.za</p>
-                <p><strong>Phone:</strong> +27 (0)11 123-4567</p>
+                <p><strong>Email:</strong> philidanisa1@gmail.com</p>
+                <p><strong>Phone:</strong> 076 734 9862</p>
                 <p><strong>Hours:</strong> Monday - Friday, 9:00 AM - 6:00 PM</p>
               </div>
             </div>
