@@ -116,17 +116,7 @@ export default function ProductDetailPage({ productId, onBack, onProductSelect }
             </div>
 
             {/* Features */}
-            <div className="bg-amber-50 rounded-2xl p-6">
-              <h3 className="text-xl font-serif font-medium text-stone-800 mb-4">Features</h3>
-              <ul className="space-y-2">
-                {product.features.map((feature, index) => (
-                  <li key={index} className="flex items-start space-x-3">
-                    <span className="text-amber-600 mt-1">•</span>
-                    <span className="text-stone-700">{feature}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+        
 
             {/* Contact for Purchase */}
             <div className="bg-stone-800 rounded-2xl p-6 text-center">
