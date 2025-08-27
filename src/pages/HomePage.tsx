@@ -245,7 +245,17 @@ passion for creativity and innovation.
             {/* Contact Form */}
             <div className="bg-white rounded-3xl p-8 shadow-lg">
               <h4 className="text-2xl font-serif font-medium text-stone-800 mb-6">Send us a Message</h4>
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form
+                action="https://api.web3forms.com/submit"
+                method="POST"
+                className="space-y-6"
+              >
+                {/* Web3Forms Access Key */}
+                <input type="hidden" name="access_key" value="a7883a0c-e92c-4b4f-b9be-07f01380bc04" />
+
+                {/* Honeypot Spam Protection */}
+                <input type="checkbox" name="botcheck" className="hidden" style={{ display: 'none' }} tabIndex={-1} autoComplete="off" />
+
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-stone-700 mb-2">
                     Full Name
