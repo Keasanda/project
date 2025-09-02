@@ -1,50 +1,53 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useState } from 'react';
 import Header from './components/Header';
+import Hero from './components/Hero';
+import About from './components/About';
+import Services from './components/Services';
+import Portfolio from './components/Portfolio';
+import Impact from './components/Impact';
+import Contact from './components/Contact';
 import Footer from './components/Footer';
-import HomePage from './pages/HomePage';
-import ReturnPolicyPage from './pages/ReturnPolicyPage';
-import ProductDetailPage from './pages/ProductDetailPage';
+import Gallery from './components/Gallery';
+import CategoryGallery from './components/CategoryGallery';
 
 function App() {
-  const [currentPage, setCurrentPage] = useState('home');
-  const [selectedProductId, setSelectedProductId] = useState<number | null>(null);
+  const [currentPage, setCurrentPage] = useState<'home' | 'gallery' | 'category'>('home');
+  const [selectedCategory, setSelectedCategory] = useState<string>('');
 
-  const handleNavigate = (page: string) => {
-    setCurrentPage(page);
-    if (page !== 'product-detail') {
-      setSelectedProductId(null);
-    }
-  };
+  if (currentPage === 'gallery') {
+    return <Gallery 
+      onBack={() => setCurrentPage('home')} 
+      onCategorySelect={(category) => {
+        setSelectedCategory(category);
+        setCurrentPage('category');
+      }}
+    />;
+  }
 
-  const handleProductSelect = (productId: number) => {
-    setSelectedProductId(productId);
-    setCurrentPage('product-detail');
-  };
-
-  const renderCurrentPage = () => {
-    switch (currentPage) {
-      case 'return-policy':
-        return <ReturnPolicyPage />;
-      case 'product-detail':
-        return selectedProductId ? (
-          <ProductDetailPage 
-            productId={selectedProductId} 
-            onBack={() => handleNavigate('home')}
-            onProductSelect={handleProductSelect}
-          />
-        ) : (
-          <HomePage onProductSelect={handleProductSelect} />
-        );
-      default:
-        return <HomePage onProductSelect={handleProductSelect} />;
-    }
-  };
+  if (currentPage === 'category') {
+    return <CategoryGallery 
+      category={selectedCategory}
+      onBack={() => setCurrentPage('gallery')}
+    />;
+  }
 
   return (
-    <div className="min-h-screen bg-stone-50">
-      <Header currentPage={currentPage} onNavigate={handleNavigate} />
-      {renderCurrentPage()}
-      <Footer onNavigate={handleNavigate} />
+    <div className="min-h-screen">
+      <Header onGalleryClick={() => setCurrentPage('gallery')} />
+      <Hero onGalleryClick={() => setCurrentPage('gallery')} />
+      <About />
+      <Services />
+      <Portfolio 
+        onGalleryClick={() => setCurrentPage('gallery')}
+        onCategorySelect={(category) => {
+          setSelectedCategory(category);
+          setCurrentPage('category');
+        }}
+      />
+      <Impact />
+      <Contact />
+      <Footer />
     </div>
   );
 }

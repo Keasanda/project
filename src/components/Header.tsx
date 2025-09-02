@@ -1,122 +1,105 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Camera } from 'lucide-react';
 
 interface HeaderProps {
-  currentPage: string;
-  onNavigate: (page: string) => void;
+  onGalleryClick: () => void;
 }
 
-export default function Header({ currentPage, onNavigate }: HeaderProps) {
+const Header: React.FC<HeaderProps> = ({ onGalleryClick }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
+      setIsScrolled(window.scrollY > 50);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const handleNavClick = (page: string, sectionId?: string) => {
-    onNavigate(page);
-    setIsMenuOpen(false);
-    
-    if (sectionId && page === 'home') {
-      setTimeout(() => {
-        const element = document.getElementById(sectionId);
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
-        }
-      }, 100);
+  const navItems = [
+    { name: 'Home', href: '#home' },
+    { name: 'About', href: '#about' },
+    { name: 'Services', href: '#services' },
+    { name: 'Portfolio', href: '#portfolio' },
+    { name: 'Gallery', href: '#gallery', isSpecial: true },
+    { name: 'Impact', href: '#impact' },
+    { name: 'Contact', href: '#contact' }
+  ];
+
+  const scrollToSection = (href: string) => {
+    if (href === '#gallery') {
+      onGalleryClick();
+      setIsMenuOpen(false);
+      return;
     }
+    const element = document.querySelector(href);
+    element?.scrollIntoView({ behavior: 'smooth' });
+    setIsMenuOpen(false);
   };
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      scrolled ? 'bg-stone-50/95 backdrop-blur-md shadow-sm' : 'bg-transparent'
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      isScrolled ? 'bg-black/95 backdrop-blur-sm shadow-lg' : 'bg-transparent'
     }`}>
-      <div className="max-w-7xl mx-auto px-6 sm:px-8">
-        <div className="flex items-center justify-between h-16 sm:h-20">
-          <div className="flex items-center cursor-pointer" onClick={() => handleNavClick('home')}>
-            <img 
-              src="https://i.postimg.cc/qq8LB5Kp/DOC-20250627-WA0019-page-0001-prev-ui.png" 
-              alt="IKHANDA EMAFINI Logo" 
-              className="h-20 w-30 object-contain"
-            />
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16">
+          <div className="flex items-center space-x-2">
+            <Camera className={`w-8 h-8 ${isScrolled ? 'text-orange-500' : 'text-white'}`} />
+            <span className={`text-xl font-bold ${isScrolled ? 'text-gray-900' : 'text-white'}`}>
+            <span className={`text-xl font-bold ${isScrolled ? 'text-gray-200' : 'text-gray-200'}`}>
+              LensArt
+            </span>
+            </span>
           </div>
-          
+
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
-            <button 
-              onClick={() => handleNavClick('home')} 
-              className={`transition-colors font-medium ${
-                currentPage === 'home' ? 'text-amber-700' : 'text-stone-700 hover:text-stone-900'
-              }`}
-            >
-              Home
-            </button>
-            <button 
-              onClick={() => handleNavClick('home', 'products')} 
-              className="text-stone-700 hover:text-stone-900 transition-colors font-medium"
-            >
-              Products
-            </button>
-            <button 
-              onClick={() => handleNavClick('home', 'about')} 
-              className="text-stone-700 hover:text-stone-900 transition-colors font-medium"
-            >
-              About
-            </button>
-            <button 
-              onClick={() => handleNavClick('home', 'contact')} 
-              className="text-stone-700 hover:text-stone-900 transition-colors font-medium"
-            >
-              Contact
-            </button>
-          </div>
+          <nav className="hidden md:flex space-x-8">
+            {navItems.map((item) => (
+              <button
+                key={item.name}
+                onClick={() => scrollToSection(item.href)}
+                className={`font-medium transition-colors hover:text-orange-500 ${
+                  isScrolled ? 'text-gray-300' : 'text-gray-300'
+                } ${item.isSpecial ? 'bg-orange-500 px-4 py-2 rounded-full hover:bg-orange-600' : ''}`}
+              >
+                {item.name}
+              </button>
+            ))}
+          </nav>
 
           {/* Mobile menu button */}
           <button
+            className={`md:hidden ${isScrolled ? 'text-gray-300' : 'text-gray-300'}`}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2 text-stone-700 hover:text-stone-900"
           >
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
-      </div>
 
-      {/* Mobile Navigation */}
-      {isMenuOpen && (
-        <div className="md:hidden bg-stone-50 border-t border-stone-200">
-          <div className="px-6 py-4 space-y-4">
-            <button 
-              onClick={() => handleNavClick('home')} 
-              className="block w-full text-left text-stone-700 hover:text-stone-900 transition-colors font-medium"
-            >
-              Home
-            </button>
-            <button 
-              onClick={() => handleNavClick('home', 'products')} 
-              className="block w-full text-left text-stone-700 hover:text-stone-900 transition-colors font-medium"
-            >
-              Products
-            </button>
-            <button 
-              onClick={() => handleNavClick('home', 'about')} 
-              className="block w-full text-left text-stone-700 hover:text-stone-900 transition-colors font-medium"
-            >
-              About
-            </button>
-            <button 
-              onClick={() => handleNavClick('home', 'contact')} 
-              className="block w-full text-left text-stone-700 hover:text-stone-900 transition-colors font-medium"
-            >
-              Contact
-            </button>
+        {/* Mobile Navigation */}
+        {isMenuOpen && (
+          <div className="md:hidden bg-black/95 backdrop-blur-sm">
+            <div className="px-2 pt-2 pb-3 space-y-1">
+              {navItems.map((item) => (
+                <button
+                  key={item.name}
+                  onClick={() => scrollToSection(item.href)}
+                  className={`block w-full text-left px-3 py-2 font-medium transition-colors ${
+                    item.isSpecial 
+                      ? 'bg-orange-500 text-white rounded-lg hover:bg-orange-600 mx-2' 
+                      : 'text-gray-300 hover:text-orange-500'
+                  }`}
+                >
+                  {item.name}
+                </button>
+              ))}
+            </div>
           </div>
-        </div>
-      )}
-    </nav>
+        )}
+      </div>
+    </header>
   );
-}
+};
+
+export default Header;
